@@ -35,6 +35,7 @@ public class datatypes {
         //The var keyword lets the compiler automatically detect the type of a variable based on the value you assign to it.
         var myVar = "Hello, World!"; // The type of myVar is inferred to be String
         System.out.println(myVar);
+        // var keyword only works when the variable is assigned a value at the time of declaration.
     }
 
 }
