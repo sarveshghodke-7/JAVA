@@ -29,6 +29,7 @@ public class operators {
         
         // 4. Assignment Operators: These operators are used to assign values to variables.
         int c = 10; // This is an assignment operator that assigns the value 10 to the variable c.
+        System.out.println("Initial value of c: " + c); // Output: 10
         c += 5; // This is an addition assignment operator that adds 5 to the current value of c and assigns the result back to c. Now c is 15.
         c -= 3; // This is a subtraction assignment operator that subtracts 3 from the current value of c and assigns the result back to c. Now c is 12.
         c *= 2; // This is a multiplication assignment operator that multiplies the current value of c by 2 and assigns the result back to c. Now c is 24.
@@ -37,6 +38,7 @@ public class operators {
         
         // 5. Increment and Decrement Operators: These operators are used to increase or decrease the value of a variable by 1.
         int d = 10;
+        System.out.println("Initial value of d: " + d); // Output: 10
         d++; // This is a post-increment operator that increases the value of d by 1. Now d is 11.
         d--; // This is a post-decrement operator that decreases the value of d by 1. Now d is 10.
         ++d; // This is a pre-increment operator that increases the value of d by 1 before using it. Now d is 11.
