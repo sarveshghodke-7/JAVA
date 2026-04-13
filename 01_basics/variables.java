@@ -1,39 +1,54 @@
 public class variables {
-    //The variables in Java are used to store data values. Each variable has a specific type, which determines the kind of data it can hold. Here are some common types of variables in Java:
-    // 1. byte: It can hold values from -128 to 127.
-    // 2. short: It can hold values from -32,768 to 32,767.
-    // 3. int: It can hold values from -2,147,483,648 to 2,147,483,647.
-    // 4. long: It can hold values from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
-    // 5. float: It can hold decimal values with single precision.
-    // 6. double: It can hold decimal values with double precision.
-    // 7. char: It can hold a single character.
-    // 8. boolean: It can hold either true or false.
-    // Syntax to declare a variable: type variableName = value;
     public static void main(String[] args){
-        int myNumber = 10; // This is an integer variable
-        double myDecimal = 3.14; // This is a double variable
-        char myChar = 'A'; // This is a char variable
-        boolean myBoolean = true; // This is a boolean variable
-        String name = "John"; // This is a String variable
+        String firstname = "John ";
+        String lastname = "Doe";
+        String fullname = firstname + lastname; // Concatenation of strings
+        System.out.println(fullname);
 
-        System.out.println("Integer: " + myNumber);
-        System.out.println("Double: " + myDecimal);
-        System.out.println("Character: " + myChar);
-        System.out.println("Boolean: " + myBoolean);
-        System.out.println("String: " + name);
-        System.out.println(name + " is " + myNumber + " years old.");
+        int age = 30; // Integer variable
+        double height = 5.9; // Double variable
+        boolean isStudent = false; // Boolean variable
 
-        //You can declare multiple variables of the same type in a single line:
-        int a = 5, b = 10, c = 15;
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+        System.out.println("Is Student: " + isStudent);
+
+        int sum = age + (int)height;
+        System.out.println("Sum of age and height: " + sum);
+
+        int x = 5;
+        int y = 6;
+
+        System.out.println("The sum is " + x + y);   // Prints: The sum is 56
+        System.out.println("The sum is " + (x + y)); // Prints: The sum is 11
+
+        int a = 10, b = 20, c = 30; //Multiple variables declared in a single line.
         System.out.println("a: " + a + ", b: " + b + ", c: " + c);
 
-        //Java Constants: If you want to declare a variable that cannot be changed, you can use the final keyword:
-        final double PI = 3.14159;  //final 
-        System.out.println("PI: " + PI);
+        int d, e, f; // Multiple variables declared in a single line without initialization.
+        d = 40;
+        e = 50;
+        f = 60;
+        System.out.println("d: " + d + ", e: " + e + ", f: " + f);
 
-        //The var keyword lets the compiler automatically detect the type of a variable based on the value you assign to it.
-        var myVar = "Hello, World!"; // The type of myVar is inferred to be String
-        System.out.println(myVar);
+        //Rules for naming variables in Java:
+        // 1. Variable names must start with a letter, underscore (_), or dollar sign ($).
+        // 2. Variable names cannot start with a number.
+        // 3. Variable names can only contain letters, numbers, underscores, or dollar signs
+        // 4. Variable types once declared cannot be changed i.e if you declare a variable as int, you cannot assign a string value to that variable later in the code.
+
+
+        // Good to know: In Java, there are two types of variables:
+        // 1. Local Variables: These are variables that are declared inside a method and can only be used within that method. 
+        // They are created when the method is called and destroyed when the method is finished.
+        // 2. Instance Variables: These are variables that are declared inside a class but outside of any method. 
+        // They are also known as member variables or fields. They can be used by all methods in the class and are created when an object of the class is created and destroyed when the object is destroyed.
+        // In the above code, x and y are local variables, while age, height, isStudent, firstname, lastname, and fullname are instance variables.
+        // Local variables must be initialized before use, while instance variables are automatically initialized to their default values (0 for numeric types, false for boolean, and null for object references).
+        // The precision of float is only 6-7 decimal digits, while double variables have a precision of about 16 digits.
+        // The char data type is used to store a single character, and it is enclosed in single quotes (' '), while String is used to store a sequence of characters and is enclosed in double quotes (" ").
+        // A String in Java is actually a non-primitive data type, because it refers to an object. When you create a String variable, 
+        // you are actually creating an object of the String class.
+        // String is knows as the 9th data type in Java, but it is not a primitive data type, it is a class.
     }
-
 }
