@@ -1,17 +1,18 @@
 public class method_overloading {
+    
+    int mymethod(int a, int b){
+        return a + b;
+    }
+
+    float mymethod(float a, float b){
+        return a + b;
+    }
+
+    double mymethod(double a, double b){
+        return a + b;
+    }
+
     public static void main(String[] args) {
-        int mymethod(int a, int b){
-            return a + b;
-        }
-
-        float mymethod(float a, float b){
-            return a + b;
-        }
-
-        double mymethod(double a, double b){
-            return a + b;
-        }
-
         // In Java, method overloading is a feature that allows you to have multiple methods with the same name but different parameters.
         // The Java compiler will determine which method to call based on the number and types of the parameters.   
         // This allows you to create methods that perform similar tasks but with different input types or numbers of parameters.
