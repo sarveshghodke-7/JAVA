@@ -75,5 +75,17 @@ public class modifiers {
 // ---- For classes:                    Use final or abstract.
 // ---- For attributes and methods:-    Use final, static, abstract, transient, synchronized, volatile.
 
+// | Modifier     | Purpose                   |
+// |--------------|---------------------------|
+// | public       | Everywhere access         |
+// | private      | Same class only           |
+// | protected    | Package + subclass        |
+// | default      | Same package              |
+// | static       | Class-level shared        |
+// | final        | Constant / no change      |
+// | abstract     | Incomplete blueprint      |
+// | synchronized | Thread safety             |
+// | volatile     | Memory visibility         |
+// | transient    | Skip during serialization |
 
 
