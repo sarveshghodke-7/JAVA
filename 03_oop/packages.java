@@ -39,6 +39,9 @@ public class packages {
 //          System.out.println("Hello");
 //          }
 //  javac -d . Main.java {👉 -d . creates folder structure automatically}
+//  -d tells the compiler **where to place output AND to respect package structure while doing so`
+//  The -d keyword specifies the destination for where to save the class file. 
+//  to run the above package, run it as follows:-> java com.mycompany.app.Main
 //      
 // 2] Manually create folders
 //  -- com/mycompany/app/
